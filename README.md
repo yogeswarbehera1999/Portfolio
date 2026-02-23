@@ -239,4 +239,5 @@ For questions or issues, feel free to reach out through the contact form on the 
 
 ---
 
-**Built with ❤️ using React, TypeScript, and Supabase**
+**Built By YOGESWAR BEHERA with ❤️ using React, TypeScript, and Supabase**
+
