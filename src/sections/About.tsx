@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { Code2, Rocket, Heart, Award } from 'lucide-react';
-
+import Avatar3D from '../components/Avatar3D';
 const highlights = [
   {
     Icon: Code2,
@@ -45,25 +45,27 @@ export const About = () => {
             About Me
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 mx-auto rounded-full" />
-        </motion.div>
+          </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl transform rotate-6" />
-              <div className="relative bg-gradient-to-br from-blue-500 to-cyan-400 p-1 rounded-2xl">
-                <div className="bg-white dark:bg-gray-800 rounded-xl p-8">
-                  <div className="aspect-square bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900 dark:to-cyan-900 rounded-lg flex items-center justify-center">
-                    <Code2 size={120} className="text-blue-600 dark:text-cyan-400" />
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            {/* <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={isVisible ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl transform rotate-6" />
+                <div className="relative bg-gradient-to-br from-blue-500 to-cyan-400 p-1 rounded-2xl">
+                  <div className="bg-white dark:bg-gray-800 rounded-xl p-8">
+                    <div className="aspect-square bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900 dark:to-cyan-900 rounded-lg flex items-center justify-center"> */}
+                      {/* <div className="w-full h-[300px]"> */}
+                        <Avatar3D />
+                        {/* </div> */}
+                    {/* </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div> */}
 
           <motion.div
             initial={{ opacity: 0, x: 50 }}
