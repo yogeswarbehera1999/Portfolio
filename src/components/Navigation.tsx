@@ -51,7 +51,7 @@ export const Navigation = () => {
             transition={{ delay: 0.2 }}
             className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent"
           >
-            &lt;Dev/&gt;
+            {/* &lt;Dev/&gt; */}
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">
